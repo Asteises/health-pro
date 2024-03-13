@@ -9,15 +9,4 @@ import java.util.UUID;
 @Repository
 public interface RecipeRepository extends JpaRepository<Recipe, UUID> {
 
-//    @Query("""
-//            select distinct r from Recipe as r
-//            """)
-//    List<Recipe> getAllWithIngredients();
-
-//    @Query("""
-//            select distinct r from Recipe as r
-//            left join fetch r.steps as s
-//            where r in :recipes
-//            """)
-//    List<Recipe> getAllWithStepsByRecipeWithIngredients(List<Recipe> recipes);
 }
