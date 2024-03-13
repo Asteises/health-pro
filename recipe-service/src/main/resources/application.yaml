@@ -1,3 +1,7 @@
+logging:
+  level:
+    root: warn
+
 server:
   port: 8885
 
@@ -12,7 +16,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/health-pro-db
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
+    open-in-view: off
+  sql:
+    init:
+      mode: always
   mvc:
     format:
       date-time: dd-MM-yyyy HH:mm:ss
